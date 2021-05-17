@@ -364,6 +364,11 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 - Create a filtering method wherein creatures searched after selecting the Commander will take into account the creature's color identity; if the creature's searched for color identity is not a proper subset of the commander, alert the user that the creature cannot be added to the deck. 
 
 ### Goals
+
+|  Day | Deliverable | Status
+|---|---| ---|
+|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
+
 Day 1: Create the basics of the MVP framework; search capability for the API is not too difficult to master; this day will mainly be focused on ensuring how the creatures are searched for and that if an imageUrl is not available the user is given a placeholder card. 
 
 Day 2: Create the HTML/CSS landing page for the MVP
@@ -379,6 +384,10 @@ Day 5: Additional testing; if possible finalize the CSS layout and design and fu
 
 
 ### Timeframes
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| HTML Set-up | H | 3.5hrs| 6hrs | 5hrs |
+
 Monday    
 | 9:00-12:00 PM | Focus on search capabilites for the API; map out best ways to search for cards based on name, color, or supertype
 | 1:00-4:00PM | Create a basic framework for the HTML and CSS to append images from the search to the webbrowser
