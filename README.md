@@ -1,7 +1,7 @@
 # MtG-Deck-API
 
 ### Description
-This program will enable users to search the (https://docs.magicthegathering.io/) through a front-end application utilizing, HTML, CSS, and JavaScript. The application will allow the user to search for card names as well as for generic names such as 'Goblin' or 'Wizard' and return a selection from the MtG official database found at https://gatherer.wizards.com/Pages/Default.aspx feature the creature's card and name.
+This program will enable users to search the (https://docs.magicthegathering.io/) API database through a front-end application utilizing, HTML, CSS, and JavaScript. The application will allow the user to search for specific card names as well as for generic names such as 'Goblin' or 'Wizard' and return a selection from the official MtG database found at https://gatherer.wizards.com/Pages/Default.aspx featuring the creature's card and name.
 
 ### API
 The API to be used for this project is: https://docs.magicthegathering.io/
