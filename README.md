@@ -9,304 +9,131 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 ### API Snippet
 
 ```
+{
     "cards": [
         {
-            "name": "Lightning Bolt",
-            "manaCost": "{R}",
-            "cmc": 1.0,
+            "name": "Gerrard, Weatherlight Hero",
+            "manaCost": "{2}{R}{W}",
+            "cmc": 4.0,
             "colors": [
-                "Red"
+                "Red",
+                "White"
             ],
             "colorIdentity": [
-                "R"
+                "R",
+                "W"
             ],
-            "type": "Instant",
+            "type": "Legendary Creature — Human Soldier",
+            "supertypes": [
+                "Legendary"
+            ],
             "types": [
-                "Instant"
+                "Creature"
             ],
-            "rarity": "Common",
-            "set": "2ED",
-            "setName": "Unlimited Edition",
-            "text": "Lightning Bolt deals 3 damage to any target.",
-            "artist": "Christopher Rush",
-            "number": "162",
+            "subtypes": [
+                "Human",
+                "Soldier"
+            ],
+            "rarity": "Rare",
+            "set": "C19",
+            "setName": "Commander 2019",
+            "text": "First strike\nWhen Gerrard, Weatherlight Hero dies, exile it and return to the battlefield all artifact and creature cards in your graveyard that were put there from the battlefield this turn.",
+            "flavor": "Gerrard's final act ensured his legacy would never die.",
+            "artist": "Zack Stella",
+            "number": "41",
+            "power": "3",
+            "toughness": "3",
             "layout": "normal",
-            "multiverseid": "806",
-            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=806&type=card",
-            "printings": [
-                "2ED",
-                "3ED",
-                "4BB",
-                "4ED",
-                "A25",
-                "ATH",
-                "BTD",
-                "CED",
-                "CEI",
-                "E01",
-                "FBB",
-                "JGP",
-                "JMP",
-                "LEA",
-                "LEB",
-                "M10",
-                "M11",
-                "MB1",
-                "ME1",
-                "MM2",
-                "P10",
-                "PD2",
-                "PF19",
-                "PLIST",
-                "PRM",
-                "PTC",
-                "SLD",
-                "STA",
-                "SUM",
-                "TD0"
-            ],
-            "originalText": "Lightning Bolt does 3 damage to one target.",
-            "originalType": "Instant",
-            "legalities": [
+            "multiverseid": "470587",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=470587&type=card",
+            "rulings": [
                 {
-                    "format": "Commander",
-                    "legality": "Legal"
+                    "date": "2019-08-23",
+                    "text": "Gerrard’s triggered ability returns artifact and creature cards even if Gerrard leaves your graveyard before you can exile it."
                 },
                 {
-                    "format": "Duel",
-                    "legality": "Legal"
+                    "date": "2019-08-23",
+                    "text": "Gerrard’s triggered ability returns artifact and creature cards even if they were put into your graveyard while Gerrard wasn’t on the battlefield, so long as they were put there this turn."
                 },
                 {
-                    "format": "Gladiator",
-                    "legality": "Legal"
+                    "date": "2019-08-23",
+                    "text": "If Gerrard is your commander, you can exile it into the command zone from your graveyard. You’ll still return your artifact and creature cards."
                 },
                 {
-                    "format": "Historic",
-                    "legality": "Banned"
-                },
-                {
-                    "format": "Legacy",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Modern",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Oldschool",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Pauper",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Premodern",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Vintage",
-                    "legality": "Legal"
+                    "date": "2019-08-23",
+                    "text": "Permanent spells that were countered earlier in the turn never entered the battlefield, so they won’t be returned by Gerrard’s ability."
                 }
             ],
-            "id": "d944340c-4fa8-5bd1-8abd-ad42cb1d2ae4"
-        },
-        {
-            "name": "Lightning Bolt",
-            "manaCost": "{R}",
-            "cmc": 1.0,
-            "colors": [
-                "Red"
-            ],
-            "colorIdentity": [
-                "R"
-            ],
-            "type": "Instant",
-            "types": [
-                "Instant"
-            ],
-            "rarity": "Common",
-            "set": "3ED",
-            "setName": "Revised Edition",
-            "text": "Lightning Bolt deals 3 damage to any target.",
-            "artist": "Christopher Rush",
-            "number": "162",
-            "layout": "normal",
-            "multiverseid": "1303",
-            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1303&type=card",
             "foreignNames": [
                 {
-                    "name": "Blitzschlag",
-                    "text": "Der Blitz fügt einer Kreatur oder einem Spieler 3 Schadenspunkte zu.",
-                    "type": "Spontanzauber",
-                    "flavor": null,
+                    "name": "Gerrard, Held der Wetterlicht",
+                    "text": "Erstschlag\nWenn Gerrard, Held der Wetterlicht, stirbt, schicke ihn ins Exil und bringe alle Artefakt- und Kreaturenkarten aus deinem Friedhof ins Spiel zurück, die in diesem Zug aus dem Spiel dorthin gelegt wurden.",
+                    "type": "Legendäre Kreatur — Mensch, Soldat",
+                    "flavor": "Mit seiner letzten Tat sicherte Gerrard sein Vermächtnis.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=470889&type=card",
                     "language": "German",
-                    "multiverseid": null
+                    "multiverseid": 470889
                 },
                 {
-                    "name": "Foudre",
-                    "flavor": null,
-                    "language": "French",
-                    "multiverseid": null
-                },
-                {
-                    "name": "Fulmine",
-                    "flavor": null,
-                    "language": "Italian",
-                    "multiverseid": null
-                }
-            ],
-            "printings": [
-                "2ED",
-                "3ED",
-                "4BB",
-                "4ED",
-                "A25",
-                "ATH",
-                "BTD",
-                "CED",
-                "CEI",
-                "E01",
-                "FBB",
-                "JGP",
-                "JMP",
-                "LEA",
-                "LEB",
-                "M10",
-                "M11",
-                "MB1",
-                "ME1",
-                "MM2",
-                "P10",
-                "PD2",
-                "PF19",
-                "PLIST",
-                "PRM",
-                "PTC",
-                "SLD",
-                "STA",
-                "SUM",
-                "TD0"
-            ],
-            "originalText": "Lightning Bolt does 3 damage to one target.",
-            "originalType": "Instant",
-            "legalities": [
-                {
-                    "format": "Commander",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Duel",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Gladiator",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Historic",
-                    "legality": "Banned"
-                },
-                {
-                    "format": "Legacy",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Modern",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Oldschool",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Pauper",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Premodern",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Vintage",
-                    "legality": "Legal"
-                }
-            ],
-            "id": "983bb171-9ffa-5252-b7ed-49b3f6988369"
-        },
-        {
-            "name": "Lightning Bolt",
-            "manaCost": "{R}",
-            "cmc": 1.0,
-            "colors": [
-                "Red"
-            ],
-            "colorIdentity": [
-                "R"
-            ],
-            "type": "Instant",
-            "types": [
-                "Instant"
-            ],
-            "rarity": "Common",
-            "set": "4BB",
-            "setName": "Fourth Edition Foreign Black Border",
-            "text": "Lightning Bolt deals 3 damage to any target.",
-            "artist": "Christopher Rush",
-            "number": "208",
-            "layout": "normal",
-            "foreignNames": [
-                {
-                    "name": "Relámpago",
-                    "flavor": null,
+                    "name": "Gerrard, héroe del Vientoligero",
+                    "text": "Daña primero.\nCuando Gerrard, héroe del Vientoligero muera, exílialo y regresa al campo de batalla todas las cartas de criatura y de artefacto de tu cementerio que fueron allí desde el campo de batalla este turno.",
+                    "type": "Criatura legendaria — Soldado humano",
+                    "flavor": "El acto final de Gerrard aseguró la pervivencia eterna de su legado.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=471191&type=card",
                     "language": "Spanish",
-                    "multiverseid": null
+                    "multiverseid": 471191
                 },
                 {
-                    "name": "稲妻",
-                    "flavor": null,
+                    "name": "Gerrard, héros de l'Aquilon",
+                    "text": "Initiative\nQuand Gerrard, héros de l'Aquilon meurt, exilez-le et renvoyez sur le champ de bataille toutes les cartes d'artefact et de créature de votre cimetière qui y ont été mises ce tour-ci depuis le champ de bataille.",
+                    "type": "Créature légendaire : humain et soldat",
+                    "flavor": "Avec son dernier acte, Gerrard s'assura que son héritage ne mourrait jamais.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=471493&type=card",
+                    "language": "French",
+                    "multiverseid": 471493
+                },
+                {
+                    "name": "Gerrard, Eroe della Cavalcavento",
+                    "text": "Attacco improvviso\nQuando Gerrard, Eroe della Cavalcavento muore, esilialo e rimetti sul campo di battaglia tutte le carte artefatto e creatura nel tuo cimitero che vi sono state messe dal campo di battaglia in questo turno.",
+                    "type": "Creatura Leggendaria — Soldato Umano",
+                    "flavor": "L'ultima azione di Gerrard garantì che la sua eredità sopravvivesse in eterno.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=471795&type=card",
+                    "language": "Italian",
+                    "multiverseid": 471795
+                },
+                {
+                    "name": "ウェザーライトの英雄、ジェラード",
+                    "text": "先制攻撃\nウェザーライトの英雄、ジェラードが死亡したとき、これを追放し、あなたの墓地にあるアーティファクトやクリーチャーであってこのターンに戦場からあなたの墓地に置かれたカードをすべて戦場に戻す。",
+                    "type": "伝説のクリーチャー — 人間・兵士",
+                    "flavor": "ジェラードが最後にとった行動は、決して滅ぶことのない彼の遺産をはっきりと残した。",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=472097&type=card",
                     "language": "Japanese",
-                    "multiverseid": null
+                    "multiverseid": 472097
                 },
                 {
-                    "name": "Raio",
-                    "flavor": null,
+                    "name": "Gerrard, Herói do Bons Ventos",
+                    "text": "Iniciativa\nQuando Gerrard, Herói do Bons Ventos, morrer, exile-o e devolva ao campo de batalha todos os cards de artefato e criatura em seu cemitério que tenham sido colocados lá vindos do campo de batalha neste turno.",
+                    "type": "Criatura Lendária — Humano Soldado",
+                    "flavor": "O último ato de Gerrard garantiu que seu legado jamais pereceria.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=472399&type=card",
                     "language": "Portuguese (Brazil)",
-                    "multiverseid": null
+                    "multiverseid": 472399
+                },
+                {
+                    "name": "Джерард, Герой «Везерлайта»",
+                    "text": "Первый удар\nКогда Джерард, Герой «Везерлайта» умирает, изгоните его и верните на поле битвы все находящиеся на вашем кладбище карты артефактов и существ, которые попали туда с поля битвы в этом ходу.",
+                    "type": "Легендарное Существо — Человек Солдат",
+                    "flavor": "Своим последним деянием Джерард обеспечил бессмертие своего наследия.",
+                    "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=472701&type=card",
+                    "language": "Russian",
+                    "multiverseid": 472701
                 }
             ],
             "printings": [
-                "2ED",
-                "3ED",
-                "4BB",
-                "4ED",
-                "A25",
-                "ATH",
-                "BTD",
-                "CED",
-                "CEI",
-                "E01",
-                "FBB",
-                "JGP",
-                "JMP",
-                "LEA",
-                "LEB",
-                "M10",
-                "M11",
-                "MB1",
-                "ME1",
-                "MM2",
-                "P10",
-                "PD2",
-                "PF19",
-                "PLIST",
-                "PRM",
-                "PTC",
-                "SLD",
-                "STA",
-                "SUM",
-                "TD0"
+                "C19"
             ],
+            "originalText": "First strike\nWhen Gerrard, Weatherlight Hero dies, exile it and return to the battlefield all artifact and creature cards in your graveyard that were put there from the battlefield this turn.",
+            "originalType": "Legendary Creature — Human Soldier",
             "legalities": [
                 {
                     "format": "Commander",
@@ -317,27 +144,7 @@ The API to be used for this project is: https://docs.magicthegathering.io/
                     "legality": "Legal"
                 },
                 {
-                    "format": "Gladiator",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Historic",
-                    "legality": "Banned"
-                },
-                {
                     "format": "Legacy",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Modern",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Pauper",
-                    "legality": "Legal"
-                },
-                {
-                    "format": "Premodern",
                     "legality": "Legal"
                 },
                 {
@@ -345,10 +152,14 @@ The API to be used for this project is: https://docs.magicthegathering.io/
                     "legality": "Legal"
                 }
             ],
+            "id": "28459573-f06a-5571-b232-aa1bbe6347d0"
+        }
+    ]
+}
 ```
 
 ### Wireframes
-![image](https://user-images.githubusercontent.com/67838784/118421959-38d59780-b690-11eb-881c-17001b01375b.png)
+![image](https://user-images.githubusercontent.com/67838784/118509742-52adc380-b6fe-11eb-8d16-74b18cc46755.png)
 
 
 ### MVP
@@ -380,7 +191,7 @@ Day 4: Begin adding an additional level of search to enable the user to search f
 Day 5: Additional testing; if possible finalize the CSS layout and design and fully implement the Commander search/selection process and the color-filter if feasibly doable with the API.
 
 ### Priority Matrix
-![image](https://user-images.githubusercontent.com/67838784/118422555-6ff87880-b691-11eb-9fdc-4cdcd6c2ec24.png)
+![image](https://user-images.githubusercontent.com/67838784/118509765-58a3a480-b6fe-11eb-9e41-e3dfd4d893c3.png)
 
 
 ### Timeframes
