@@ -407,3 +407,9 @@ Thursday
 Friday    
 | 9:00-12:00 PM | POSTMVP: Finalize the HTML and CSS for both Web and Mobile
 | 1:00-4:00PM | POSTMVP: Test and validate app to ensure it's performance
+
+### Code Snippet
+```
+```
+### Change Log
+ - Changed picture boarder to work with different photo styles
