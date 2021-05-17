@@ -1,0 +1,53 @@
+*{
+  border: 1px solid black;
+}
+
+body{
+  margin: 0px;
+  background-color: #7d522a;
+}
+
+h1{
+  color: #5b9aad;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  -webkit-text-stroke: 2px #926541;
+}
+
+img{
+  max-width: 200 px;
+}
+
+#searching{
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #d3dbdd;
+
+}
+
+#searchBar{
+  width: 300px;
+  height: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#searchButton{
+  width: 270px;
+  margin-top: 10px;
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #a8b9c0;
+  /* color: #5b9aad; */
+}
+
+#cardGallery{
+  margin: auto;  
+  text-align: center;
+  max-width: 1200px;
+  background-color: #d3dbdd;
+
+}
