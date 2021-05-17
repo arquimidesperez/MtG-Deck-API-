@@ -176,19 +176,13 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 
 ### Goals
 
-|  Day | Deliverable | Status
+|  Day | Deliverable | Status |
 |---|---| ---|
-|August 14-16| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
-
-Day 1: Create the basics of the MVP framework; search capability for the API is not too difficult to master; this day will mainly be focused on ensuring how the creatures are searched for and that if an imageUrl is not available the user is given a placeholder card. 
-
-Day 2: Create the HTML/CSS landing page for the MVP
-
-Day 3: Begin researching methods for appending the creatures selected to a Decklist and what would be necessary to allow the users to download the creatures selected into a file; begin experimenting with the color filters for API querying.
-
-Day 4: Begin adding an additional level of search to enable the user to search for Legendary Creature to serve as commander; if this is not feasible may hard-code a few creatures to be featured commanders based on the most popular comamnder archetypes as featured on edhrec: (https://edhrec.com/)
-
-Day 5: Additional testing; if possible finalize the CSS layout and design and fully implement the Commander search/selection process and the color-filter if feasibly doable with the API.
+|August 17| Prompt Approval - API Search |  |
+|August 18| HTML & CSS Prototyping |  |
+|August 19| Validating MVP - Post MVP: Decklist, Commander Search/Selection |  |
+|August 20| Post MVP: Media Queries & Local Storage |  |
+|August 21| Post MVP: Validating and trouble shooting before presentation |  |
 
 ### Priority Matrix
 ![image](https://user-images.githubusercontent.com/67838784/118509765-58a3a480-b6fe-11eb-9e41-e3dfd4d893c3.png)
@@ -196,28 +190,12 @@ Day 5: Additional testing; if possible finalize the CSS layout and design and fu
 
 ### Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| HTML Set-up | H | 3.5hrs| 6hrs | 5hrs |
-
-Monday    
-| 9:00-12:00 PM | Focus on search capabilites for the API; map out best ways to search for cards based on name, color, or supertype
-| 1:00-4:00PM | Create a basic framework for the HTML and CSS to append images from the search to the webbrowser
-
-Tuesday   
-| 9:00-12:00 PM | Prototype the CSS & HTML components of the page; work on the Media queries to see design differences between Web vs. Mobile
-| 1:00-4:00PM | Append creatures selected by user to a decklist to save previous searches
-
-Wednesday 
-| 9:00-12:00 PM | Local storage; try and allow the users to save their decklist to their computers locally
-| 1:00-4:00PM | Add additional legendary creature selection to enable usesr to select a Legendary creature as their commander
-
-Thursday  
-| 9:00-12:00 PM | POSTMVP: Try and implement the color filters so that creatures need to be part of the user's commanders to be displayed
-| 1:00-4:00PM | POSTMVP: Expand search options to enable more responsiveness for the user
-
-Friday    
-| 9:00-12:00 PM | POSTMVP: Finalize the HTML and CSS for both Web and Mobile
-| 1:00-4:00PM | POSTMVP: Test and validate app to ensure it's performance
+| API Search | H | 3 hours |  |  |
+| HTML Prototype | H | 2 hours |  |  |
+| CSS Prototype | M | 1 hours |  |  |
+| Append Decklist | M | 2 hours |  |  |
+| Local Storage | M | 2 hours |  |  |
+| Commander Search | L | 3 hours |  |  |
 
 ### Code Snippet
 ```
