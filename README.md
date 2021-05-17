@@ -9,14 +9,342 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 ### API Snippet
 
 ```
-async function getFromDatabase() {
-  const url = `https://api.magicthegathering.io/v1/cards?name=Lightning_Bolt`
-  axios.get(url)
-    .then((res) => {
-      console.log(res.data.cards)
-      const cardArray = res.data.cards;
-      ...
-})
+    "cards": [
+        {
+            "name": "Lightning Bolt",
+            "manaCost": "{R}",
+            "cmc": 1.0,
+            "colors": [
+                "Red"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Instant",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "Common",
+            "set": "2ED",
+            "setName": "Unlimited Edition",
+            "text": "Lightning Bolt deals 3 damage to any target.",
+            "artist": "Christopher Rush",
+            "number": "162",
+            "layout": "normal",
+            "multiverseid": "806",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=806&type=card",
+            "printings": [
+                "2ED",
+                "3ED",
+                "4BB",
+                "4ED",
+                "A25",
+                "ATH",
+                "BTD",
+                "CED",
+                "CEI",
+                "E01",
+                "FBB",
+                "JGP",
+                "JMP",
+                "LEA",
+                "LEB",
+                "M10",
+                "M11",
+                "MB1",
+                "ME1",
+                "MM2",
+                "P10",
+                "PD2",
+                "PF19",
+                "PLIST",
+                "PRM",
+                "PTC",
+                "SLD",
+                "STA",
+                "SUM",
+                "TD0"
+            ],
+            "originalText": "Lightning Bolt does 3 damage to one target.",
+            "originalType": "Instant",
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oldschool",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Premodern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "d944340c-4fa8-5bd1-8abd-ad42cb1d2ae4"
+        },
+        {
+            "name": "Lightning Bolt",
+            "manaCost": "{R}",
+            "cmc": 1.0,
+            "colors": [
+                "Red"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Instant",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "Common",
+            "set": "3ED",
+            "setName": "Revised Edition",
+            "text": "Lightning Bolt deals 3 damage to any target.",
+            "artist": "Christopher Rush",
+            "number": "162",
+            "layout": "normal",
+            "multiverseid": "1303",
+            "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1303&type=card",
+            "foreignNames": [
+                {
+                    "name": "Blitzschlag",
+                    "text": "Der Blitz fügt einer Kreatur oder einem Spieler 3 Schadenspunkte zu.",
+                    "type": "Spontanzauber",
+                    "flavor": null,
+                    "language": "German",
+                    "multiverseid": null
+                },
+                {
+                    "name": "Foudre",
+                    "flavor": null,
+                    "language": "French",
+                    "multiverseid": null
+                },
+                {
+                    "name": "Fulmine",
+                    "flavor": null,
+                    "language": "Italian",
+                    "multiverseid": null
+                }
+            ],
+            "printings": [
+                "2ED",
+                "3ED",
+                "4BB",
+                "4ED",
+                "A25",
+                "ATH",
+                "BTD",
+                "CED",
+                "CEI",
+                "E01",
+                "FBB",
+                "JGP",
+                "JMP",
+                "LEA",
+                "LEB",
+                "M10",
+                "M11",
+                "MB1",
+                "ME1",
+                "MM2",
+                "P10",
+                "PD2",
+                "PF19",
+                "PLIST",
+                "PRM",
+                "PTC",
+                "SLD",
+                "STA",
+                "SUM",
+                "TD0"
+            ],
+            "originalText": "Lightning Bolt does 3 damage to one target.",
+            "originalType": "Instant",
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Oldschool",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Premodern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
+            "id": "983bb171-9ffa-5252-b7ed-49b3f6988369"
+        },
+        {
+            "name": "Lightning Bolt",
+            "manaCost": "{R}",
+            "cmc": 1.0,
+            "colors": [
+                "Red"
+            ],
+            "colorIdentity": [
+                "R"
+            ],
+            "type": "Instant",
+            "types": [
+                "Instant"
+            ],
+            "rarity": "Common",
+            "set": "4BB",
+            "setName": "Fourth Edition Foreign Black Border",
+            "text": "Lightning Bolt deals 3 damage to any target.",
+            "artist": "Christopher Rush",
+            "number": "208",
+            "layout": "normal",
+            "foreignNames": [
+                {
+                    "name": "Relámpago",
+                    "flavor": null,
+                    "language": "Spanish",
+                    "multiverseid": null
+                },
+                {
+                    "name": "稲妻",
+                    "flavor": null,
+                    "language": "Japanese",
+                    "multiverseid": null
+                },
+                {
+                    "name": "Raio",
+                    "flavor": null,
+                    "language": "Portuguese (Brazil)",
+                    "multiverseid": null
+                }
+            ],
+            "printings": [
+                "2ED",
+                "3ED",
+                "4BB",
+                "4ED",
+                "A25",
+                "ATH",
+                "BTD",
+                "CED",
+                "CEI",
+                "E01",
+                "FBB",
+                "JGP",
+                "JMP",
+                "LEA",
+                "LEB",
+                "M10",
+                "M11",
+                "MB1",
+                "ME1",
+                "MM2",
+                "P10",
+                "PD2",
+                "PF19",
+                "PLIST",
+                "PRM",
+                "PTC",
+                "SLD",
+                "STA",
+                "SUM",
+                "TD0"
+            ],
+            "legalities": [
+                {
+                    "format": "Commander",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Duel",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Gladiator",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Historic",
+                    "legality": "Banned"
+                },
+                {
+                    "format": "Legacy",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Modern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Pauper",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Premodern",
+                    "legality": "Legal"
+                },
+                {
+                    "format": "Vintage",
+                    "legality": "Legal"
+                }
+            ],
 ```
 
 ### Wireframes
