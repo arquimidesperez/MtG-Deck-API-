@@ -190,6 +190,7 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 
 ### Timeframes
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
+|---|---| ---| ---| ---| ---|
 | API Search | H | 3 hours |  |  |
 | HTML Prototype | H | 2 hours |  |  |
 | CSS Prototype | M | 1 hours |  |  |
