@@ -64,21 +64,45 @@ h1{
   background-position: center;
   background-size: cover;
   border-radius: 10px;
-
 }
 
-/* 
-#picture{
+#outputfile{
   max-width: 200px;
-  
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
 }
 
-.oCard{
-  justify-content: center;
-  margin: 10px 5px 10px 5px;
+a{
+  font-family: 'Sorts Mill Goudy', sans-serif;
+  text-decoration: none;
+  color: white;
 }
 
-img{
+
+#form{
+  display: none;
+  background-color: #d3dbdd;
   max-width: 200px;
-  border-radius: 14px;
-} */
+  margin: auto;
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  right: 10px;
+  border: 1px solid black;
+}
+
+.formBtn{
+  width: 80px;
+  display: inline;
+}
+
+#confirm{
+  background-color: yellowgreen;
+  font-family: 'Sorts Mill Goudy', sans-serif;
+}
+
+#cancel{
+  background-color: darkred;
+  font-family: 'Sorts Mill Goudy', sans-serif;
+}

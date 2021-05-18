@@ -79,29 +79,36 @@ searchButton.addEventListener('click', () => {
 
 const cardGallery = document.querySelector('#cardGallery');
 
+// const word = 'arquimides';
+
 function showToUser(returnedUniqueCards) {
   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
 
   for (let i = 0; i < returnedUniqueCards.length; i++) {
+    const chosenCard = returnedUniqueCards[i].name;
     const output =
       `
-      <div class='card' style="background-image: url('${returnedUniqueCards[i].imageUrl}')"></div>
+      <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${returnedUniqueCards[i].imageUrl}')"></div>
       `
     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
       const imagelessOutput =
       `
-      <div class='card' style="background-image: url('${image}')"></div>
+      <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${image}')"></div>
       `
       // console.log('within imageless')
       cardGallery.insertAdjacentHTML('afterbegin', imagelessOutput);
       
     } else {
       cardGallery.insertAdjacentHTML('afterbegin', output);
-      console.log(i);
       // console.log('within images')
     }
 
   }
+}
+
+function clickedCard(name) {
+  document.getElementById("form").style.display = "block";
+  alert(name);
 }
 
 

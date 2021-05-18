@@ -8,6 +8,11 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy&display=swap" rel="stylesheet">
+  <!-- 
+  <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
+  <script src="/path/to/flickity.pkgd.min.js"></script> 
+  -->
+
   <title>MtG: Decklist Builder</title>
 
 </head>
@@ -25,6 +30,17 @@
     <!-- <div class='card'></div> 
     <p id ='picture'></p> -->
   </div>
+
+  <div id='outputfile'>
+    <a href="Decklist.txt" download> Download Decklist </a>
+  </div>
+
+    <form id='form'>
+      <h3>Add Card to Decklist?</h3>
+      <button type='submit' class='formBtn' id='confirm'>Yes</button>
+      <button type='cancel' class='formBtn' id='cancel'>No</button>
+    </form>
+
 
 </body>
 
