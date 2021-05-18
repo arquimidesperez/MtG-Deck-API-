@@ -1,7 +1,7 @@
 /**
  * 
  * Need to remove existing content whenever the submit button is clicked so it doesn't continually 
- * append onto itself; - Soft fix
+ * append onto itself; - Soft fix - memory leaks possible(?)
  * 
  * Need to create the card-body thing so that the card's info displays if the card is blank
  * 
