@@ -1,5 +1,5 @@
 *{
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 body{
@@ -13,10 +13,7 @@ h1{
   text-align: center;
   text-shadow: 3px 3px black;
   -webkit-text-stroke: 1px #926541;
-}
-
-img{
-  max-width: 200 px;
+  /* background-color: white; */
 }
 
 #searching{
@@ -48,22 +45,39 @@ img{
 }
 
 #cardGallery{
-  margin: auto;  
-  text-align: center;
-  max-width: 1200px;
-  background-color: #d3dbdd;
-  height: 500px;
   display: flex;
+  flex-flow: row wrap;
+  margin: auto 20px;  
+  text-align: center;
+  /* max-width: 1200px; */
+  background-color: #d3dbdd;
+  /* height: 500px; */
+
 }
 
-.card{
+/* .card{
   margin: 10px 10px 10px 10px;
-  height: 100px;
+  height: 180px;
   width: 100px;
-  background-repeat: no-repeat;
-  /**
-  cover image
-  make them repeat 
+  background-repeat: no-repeat;  
+} */
 
-  */
+
+#picture{
+  max-width: 200px;
+  /* display: flex;
+  flex-flow: row wrap; */
+}
+
+.oCard{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 10px 5px 10px 5px;
+}
+
+img{
+  max-width: 200px;
+  border-radius: 14px;
+  /* may be 15px */
 }
