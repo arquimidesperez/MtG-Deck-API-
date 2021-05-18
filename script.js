@@ -60,58 +60,59 @@ searchButton.addEventListener('click', () => {
 
 
 
-// const cardGallery = document.querySelector('#cardGallery');
+const cardGallery = document.querySelector('#cardGallery');
 
-// function showToUser(returnedUniqueCards) {
-//   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
-
-//   for (let i = 0; i < returnedUniqueCards.length; i++) {
-//     const output =
-//       `
-//       <div class='card' style="background-image: url('${returnedUniqueCards[i].imageUrl}')"></div>
-//       `
-//     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
-//       const imagelessOutput =
-//       `
-//       <div class='card' style="background-image: url('${image}')"></div>
-//       `
-//       // console.log('within imageless')
-//       cardGallery.insertAdjacentHTML('afterbegin', imagelessOutput);
-      
-//     } else {
-//       cardGallery.insertAdjacentHTML('afterbegin', output);
-//       console.log(i);
-//       // console.log('within images')
-//     }
-
-//   }
-// }
-
-//original function if errors result recomment this back in
 function showToUser(returnedUniqueCards) {
   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
+
   for (let i = 0; i < returnedUniqueCards.length; i++) {
     const output =
       `
-    <div class='oCard'>
-      <p>${returnedUniqueCards[i].name}</p>
-      <img src=${returnedUniqueCards[i].imageUrl}>
-    </div>
-    `
+      <div class='card' style="background-image: url('${returnedUniqueCards[i].imageUrl}')"></div>
+      `
     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
       const imagelessOutput =
       `
-      <div class='oCard'>
-        <p>${returnedUniqueCards[i].name}</p>
-        <img class="noImage" src=${image}>
-      </div>
+      <div class='card' style="background-image: url('${image}')"></div>
       `
-      document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', imagelessOutput);
+      // console.log('within imageless')
+      cardGallery.insertAdjacentHTML('afterbegin', imagelessOutput);
       
     } else {
-      document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', output);
+      cardGallery.insertAdjacentHTML('afterbegin', output);
+      console.log(i);
+      // console.log('within images')
     }
 
   }
 }
+
+//original function if errors result recomment this back in
+
+// function showToUser(returnedUniqueCards) {
+//   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
+//   for (let i = 0; i < returnedUniqueCards.length; i++) {
+//     const output =
+//       `
+//     <div class='oCard'>
+//       <p>${returnedUniqueCards[i].name}</p>
+//       <img src=${returnedUniqueCards[i].imageUrl}>
+//     </div>
+//     `
+//     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
+//       const imagelessOutput =
+//       `
+//       <div class='oCard'>
+//         <p>${returnedUniqueCards[i].name}</p>
+//         <img class="noImage" src=${image}>
+//       </div>
+//       `
+//       document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', imagelessOutput);
+      
+//     } else {
+//       document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', output);
+//     }
+
+//   }
+// }
   
