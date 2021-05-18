@@ -1,3 +1,20 @@
+/**
+ * 
+ * Need to remove existing content whenever the submit button is clicked so it doesn't continually 
+ * append onto itself; - Soft fix
+ * 
+ * Need to create the card-body thing so that the card's info displays if the card is blank
+ * 
+ * Need to create a carousel
+ * 
+ * Need to do the media queries
+ * 
+ * Need to do the append to a list
+ * 
+ * Need to allow to download to user storage
+ */
+
+
 async function accessDatabase(name) {
   //const datatypes should be all-caps
   //test URL to return the card 'Lightning Bolt'
@@ -31,7 +48,6 @@ async function accessDatabase(name) {
         }
       })
 
-
       console.log(uniqueCards);
       showToUser(uniqueCards);
 
@@ -42,21 +58,22 @@ async function accessDatabase(name) {
 
 }
 
-
 const searchButton = document.querySelector(`#searchButton`);
 
+
 searchButton.addEventListener('click', () => {
+
+  // removeCards(cardGallery);
+  cardGallery.innerHTML = '';
+
   const searchInput = document.querySelector(`#searchBar`);
   let searchValue = searchInput.value;
   console.log(searchValue);
 
   accessDatabase(searchValue);
 
+
 })
-
-
-
-
 
 
 
@@ -86,6 +103,21 @@ function showToUser(returnedUniqueCards) {
 
   }
 }
+
+
+// function removeCards(cardGallery) {
+//   while (cardGallery.lastChild) {
+//     return cardGallery.removeCards(cardGallery.lastChild);
+//   }
+// }
+
+//copy working for cardGallery
+// function removeCards() {
+//   while (cardGallery.lastChild) {
+//     cardGallery.removeCards(cardGallery.lastChild);
+//   }
+// }
+
 
 //original function if errors result recomment this back in
 
