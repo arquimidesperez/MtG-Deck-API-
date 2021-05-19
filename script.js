@@ -108,7 +108,7 @@ function showToUser(returnedUniqueCards) {
 
 function clickedCard(name) {
   document.getElementById("form").style.display = "block";
-  alert(name);
+  name.preventDefault();
 }
 
 

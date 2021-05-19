@@ -79,11 +79,14 @@ a{
   color: white;
 }
 
+#formContainer{
+  z-index: 9;
+}
 
 #form{
   display: none;
   background-color: #d3dbdd;
-  max-width: 200px;
+  width: 400px;
   margin: auto;
   text-align: center;
   padding: 5px;
