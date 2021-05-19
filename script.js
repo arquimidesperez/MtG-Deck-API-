@@ -107,8 +107,20 @@ function showToUser(returnedUniqueCards) {
 }
 
 function clickedCard(name) {
-  document.getElementById("form").style.display = "block";
-  name.preventDefault();
+  const formBehavior = document.getElementById("form");
+  formBehavior.style.display = "block"
+  
+  document.getElementById('cancel').onclick = function () {
+    alert('onclick fired too quickly');
+    formBehavior.style.display = 'none';
+  }
+
+  document.getElementById('confirm').onclick = function () {
+    alert('within confirm clicker');
+  }
+  
+
+
 }
 
 

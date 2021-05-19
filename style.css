@@ -80,7 +80,7 @@ a{
 }
 
 #formContainer{
-  z-index: 9;
+  z-index: 10;
 }
 
 #form{
@@ -90,8 +90,8 @@ a{
   margin: auto;
   text-align: center;
   padding: 5px;
-  position: fixed;
-  right: 10px;
+  /* position: fixed; */
+  /* right: 10px; */
   border: 1px solid black;
 }
 
