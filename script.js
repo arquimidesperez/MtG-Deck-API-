@@ -5,7 +5,7 @@
  * 
  * Need to create the card-body thing so that the card's info displays if the card is blank
  * 
- * Need to create a carousel
+ * Need to create a carousel - not super viable
  * 
  * Need to do the media queries
  * 
@@ -116,12 +116,13 @@ function clickedCard(name) {
   formBehavior.style.display = "block"
   
   document.getElementById('cancel').onclick = function () {
-    alert('onclick fired too quickly');
+    alert('Not appending to the list');
     formBehavior.style.display = 'none';
   }
 
   document.getElementById('confirm').onclick = function () {
-    alert('within confirm clicker');
+    alert('Appending card to the deck list ');
+    //function to write to .txt list
   }
 
 }
