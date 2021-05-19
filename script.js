@@ -79,8 +79,6 @@ searchButton.addEventListener('click', () => {
 
 const cardGallery = document.querySelector('#cardGallery');
 
-// const word = 'arquimides';
-
 function showToUser(returnedUniqueCards) {
   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
 
@@ -93,7 +91,14 @@ function showToUser(returnedUniqueCards) {
     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
       const imagelessOutput =
       `
-      <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${image}')"></div>
+      <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${image}')">
+        <div class='card-info'>
+          <p>Unfortunately this card's image cannot be displayed
+            <p>${returnedUniqueCards[i].name}</p>
+            <p>${returnedUniqueCards[i].originalText}</p>
+          </p>
+        </div>
+      </div>
       `
       // console.log('within imageless')
       cardGallery.insertAdjacentHTML('afterbegin', imagelessOutput);
@@ -118,8 +123,6 @@ function clickedCard(name) {
   document.getElementById('confirm').onclick = function () {
     alert('within confirm clicker');
   }
-  
-
 
 }
 

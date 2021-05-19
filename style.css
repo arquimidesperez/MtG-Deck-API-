@@ -66,6 +66,12 @@ h1{
   border-radius: 10px;
 }
 
+.card-info{
+  background: linear-gradient(0,0,0 0.4), rbga(0,0,0,1);
+  color: white;
+  font-size: 12px;
+}
+
 #outputfile{
   max-width: 200px;
   margin: auto;
