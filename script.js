@@ -151,11 +151,12 @@ function verify(arrayOfCreatures) {
 
 const downloadButton = document.querySelector('#download-button');
 
-downloadButton.addEventListener('click', () => {
+downloadButton.addEventListener('click', (arrayOfCreatures) => {
 
-  console.log('download function')
+  console.log(`download ${arrayOfCreatures}`)
   
 })
+
 
   // var file = fs.createWriteStream('decklist.txt');
   // file.on('error', function(err){})
