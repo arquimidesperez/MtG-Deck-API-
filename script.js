@@ -139,7 +139,6 @@ function arrayForFile(name) {
 
   console.log(arrayOfCreatures);
   // writeToFile(arrayOfCreatures);
-  console.log('in write to file function')
 }
 
 //https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
@@ -147,15 +146,14 @@ function arrayForFile(name) {
 
 const downloadButton = document.querySelector('#download-button');
 
-downloadButton.addEventListener('click', (arrayOfCreatures) => {
-  console.log(`downloading file: ${arrayOfCreatures}`)
+downloadButton.addEventListener('click', () => {
+
+  console.log('download function')
+  
 })
 
-// function writeToFile(array) {
-//   console.log(`Within my write to file: ${array}`);
-// }
-//   var file = fs.createWriteStream('decklist.txt');
-//   // file.on('error', function(err){})
+  // var file = fs.createWriteStream('decklist.txt');
+  // file.on('error', function(err){})
 
 
 // }
