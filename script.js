@@ -89,14 +89,15 @@ function showToUser(returnedUniqueCards) {
       <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${returnedUniqueCards[i].imageUrl}')"></div>
       `
     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
+
       const imagelessOutput =
       `
       <div class='card' onclick="clickedCard('${chosenCard}')" style="background-image: url('${image}')">
         <div class='card-info'>
-          <p>Unfortunately this card's image cannot be displayed
+          <p>Unfortunately this card's image cannot be displayed</p>
             <p>${returnedUniqueCards[i].name}</p>
-            <p>${returnedUniqueCards[i].originalText}</p>
-          </p>
+            <p>${returnedUniqueCards[i].type}</p>
+            <p>${returnedUniqueCards[i].text}</p>
         </div>
       </div>
       `
@@ -113,7 +114,9 @@ function showToUser(returnedUniqueCards) {
 
 function clickedCard(name) {
   const formBehavior = document.getElementById("form");
+  const formC = document.getElementById('formContainer');
   formBehavior.style.display = "block"
+  formC.style.display.height = '100vh';
   
   document.getElementById('cancel').onclick = function () {
     alert('Not appending to the list');
@@ -121,53 +124,12 @@ function clickedCard(name) {
   }
 
   document.getElementById('confirm').onclick = function () {
-    alert('Appending card to the deck list ');
+    alert(`Adding ${name} to the deck list`);
+
     //function to write to .txt list
+    formBehavior.style.display = 'none';
   }
 
 }
 
-
-// function removeCards(cardGallery) {
-//   while (cardGallery.lastChild) {
-//     return cardGallery.removeCards(cardGallery.lastChild);
-//   }
-// }
-
-//copy working for cardGallery
-// function removeCards() {
-//   while (cardGallery.lastChild) {
-//     cardGallery.removeCards(cardGallery.lastChild);
-//   }
-// }
-
-
-//original function if errors result recomment this back in
-
-// function showToUser(returnedUniqueCards) {
-//   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
-//   for (let i = 0; i < returnedUniqueCards.length; i++) {
-//     const output =
-//       `
-//     <div class='oCard'>
-//       <p>${returnedUniqueCards[i].name}</p>
-//       <img src=${returnedUniqueCards[i].imageUrl}>
-//     </div>
-//     `
-//     if (`${returnedUniqueCards[i].imageUrl}` == 'undefined') {
-//       const imagelessOutput =
-//       `
-//       <div class='oCard'>
-//         <p>${returnedUniqueCards[i].name}</p>
-//         <img class="noImage" src=${image}>
-//       </div>
-//       `
-//       document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', imagelessOutput);
-      
-//     } else {
-//       document.querySelector(`#picture`).insertAdjacentHTML('afterbegin', output);
-//     }
-
-//   }
-// }
   
