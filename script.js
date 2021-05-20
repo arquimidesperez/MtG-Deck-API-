@@ -24,7 +24,7 @@ async function accessDatabase(name) {
   axios.get(URL)
     .then(res => {
       //console log the result to verify information
-      console.log(res.data.cards);
+      // console.log(res.data.cards);
       //assigns the returned cardArray to a const
       /** because many cards are re-printed in mutliple sets the cardArray often
        * contains copies of the same card with alternate artwork or with a unique
@@ -48,7 +48,7 @@ async function accessDatabase(name) {
         }
       })
 
-      console.log(uniqueCards);
+      // console.log(uniqueCards);
       showToUser(uniqueCards);
 
     })
@@ -68,7 +68,7 @@ searchButton.addEventListener('click', () => {
 
   const searchInput = document.querySelector(`#searchBar`);
   let searchValue = searchInput.value;
-  console.log(searchValue);
+  // console.log(searchValue);
 
   accessDatabase(searchValue);
 
@@ -125,12 +125,35 @@ function clickedCard(name) {
 
   document.getElementById('confirm').onclick = function () {
     alert(`Adding ${name} to the deck list`);
-
+    arrayForFile(name);
     //function to write to .txt list
     formBehavior.style.display = 'none';
   }
 
 }
+
+
+const arrayOfCreatures = [];
+function arrayForFile(name) {
+  arrayOfCreatures.push(name)
+  for (let i = 0; i < arrayOfCreatures.length; i++){
+    console.log(arrayOfCreatures[i]);
+  }
+
+  console.log(arrayOfCreatures);
+  // writeToFile(arrayOfCreatures);
+  console.log('in write to file function')
+}
+
+// var fs = require('fs');
+// function writeToFile(array) {
+//   var file = fs.createWriteStream('decklist.txt');
+//   // file.on('error', function(err){})
+
+
+// }
+
+  
 
   
 // function toggleModal() {
