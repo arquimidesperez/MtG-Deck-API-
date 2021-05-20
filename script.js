@@ -116,12 +116,12 @@ function clickedCard(name) {
   // formC.style.display.height = '100vh';
   
   document.getElementById('cancel').onclick = function () {
-    alert('Not appending to the list');
+    // alert('Not appending to the list');
     formBehavior.style.display = 'none';
   }
 
   document.getElementById('confirm').onclick = function () {
-    alert(`Adding ${name} to the deck list`);
+    // alert(`Adding ${name} to the deck list`);
     arrayForFile(name);
     //function to write to .txt list
     formBehavior.style.display = 'none';
@@ -138,11 +138,16 @@ function arrayForFile(name) {
   // }
 
   console.log(arrayOfCreatures);
+  verify(arrayOfCreatures)
   // writeToFile(arrayOfCreatures);
 }
 
 //https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
 // var fs = require('fs');
+
+function verify(arrayOfCreatures) {
+  console.log(`verifying that array of creatures is returning well: ${arrayOfCreatures}`)
+}
 
 const downloadButton = document.querySelector('#download-button');
 
