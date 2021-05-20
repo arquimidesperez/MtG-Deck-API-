@@ -16,7 +16,6 @@ main{
   top: 0;
   left: 0;
   z-index: -1;
-
 }
 
 h1{
@@ -26,6 +25,7 @@ h1{
   -webkit-text-stroke: 1px #926541;
   /* background-color: white; */
 }
+
 
 #searching{
   text-align: center;
@@ -143,3 +143,26 @@ a{
   background-color: darkred;
   font-family: 'Sorts Mill Goudy', sans-serif;
 }
+
+
+/* #modal-container{
+  z-index: 100;
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: .9;
+}
+
+#modal-container #modal-content{
+  z-index: 101;
+  display: none;
+  position: absolute;
+  padding: 10%;
+  top: 25%;
+  width: 200px;
+  height: 200px;
+  background: white;
+
+} */

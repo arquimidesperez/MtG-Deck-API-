@@ -114,9 +114,9 @@ function showToUser(returnedUniqueCards) {
 
 function clickedCard(name) {
   const formBehavior = document.getElementById("form");
-  const formC = document.getElementById('formContainer');
+  // const formC = document.getElementById('formContainer');
   formBehavior.style.display = "block"
-  formC.style.display.height = '100vh';
+  // formC.style.display.height = '100vh';
   
   document.getElementById('cancel').onclick = function () {
     alert('Not appending to the list');
@@ -133,3 +133,26 @@ function clickedCard(name) {
 }
 
   
+// function toggleModal() {
+//   const modalContainer = document.getElementById('modal-container');
+//   const modalContent = document.querySelector('#modal-content');
+//   switch (modalContainer.style.display) {
+//     case "":
+//     case "none":
+//       modalContainer.style.display = "initial";
+//       modalContent.style.display = "initial";
+//       break;
+//     case "initial":
+//       modalContainer.style.display = 'none';
+//       modalContent.style.display = 'none';
+//       break;
+//   }
+//   console.log(modalContainer.style.display);
+// }
+
+// const toggleButtons = document.getElementsByClassName('toggle-modal-button');
+// for (let button of toggleButtons) {
+//   button.addEventListener("click", () => {
+//     toggleModal();
+//   });
+// }
