@@ -101,32 +101,22 @@ a{
   color: white;
 }
 
-#formContainer{
-  display: flex;
-  margin: auto;
-  /* width: 100vw; */
-  display: grid;
-  place-items: center;
-  top: 100px;
-  /* margin-top: 20%; */
-  /* top: 20%;  */
-  /* position: relative; */
-  z-index: 2;
-}
 
 #form{
   display: none;
-  /* position: absolute; */
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: #d3dbdd;
-  top: 0;
+  top: 350px;
+  /* top: 0; */
   width: 400px;
-  margin: auto;
+  /* margin: auto; */
   text-align: center;
-  padding: 5px;
-  /* position: fixed; */
-  /* right: 10px; */
+  padding: 8px;
   border: 1px solid black;
-  top: 50%;
+  /* top: 50%; */
 }
 
 .formBtn{
