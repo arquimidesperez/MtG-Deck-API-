@@ -67,11 +67,8 @@ searchButton.addEventListener('click', () => {
   cardGallery.innerHTML = '';
 
   const searchInput = document.querySelector(`#searchBar`);
-  let searchValue = searchInput.value;
-  // console.log(searchValue);
-
-  accessDatabase(searchValue);
-
+    let searchValue = searchInput.value;
+    accessDatabase(searchValue);    
 
 })
 
@@ -136,17 +133,27 @@ function clickedCard(name) {
 const arrayOfCreatures = [];
 function arrayForFile(name) {
   arrayOfCreatures.push(name)
-  for (let i = 0; i < arrayOfCreatures.length; i++){
-    console.log(arrayOfCreatures[i]);
-  }
+  // for (let i = 0; i < arrayOfCreatures.length; i++){
+  //   console.log(arrayOfCreatures[i]);
+  // }
 
   console.log(arrayOfCreatures);
   // writeToFile(arrayOfCreatures);
   console.log('in write to file function')
 }
 
+//https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
 // var fs = require('fs');
+
+const downloadButton = document.querySelector('#download-button');
+
+downloadButton.addEventListener('click', (arrayOfCreatures) => {
+  console.log(`downloading file: ${arrayOfCreatures}`)
+})
+
 // function writeToFile(array) {
+//   console.log(`Within my write to file: ${array}`);
+// }
 //   var file = fs.createWriteStream('decklist.txt');
 //   // file.on('error', function(err){})
 
