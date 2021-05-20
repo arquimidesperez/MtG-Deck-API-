@@ -1,19 +1,3 @@
-/**
- * 
- * Need to remove existing content whenever the submit button is clicked so it doesn't continually 
- * append onto itself; - Soft fix - memory leaks possible(?)
- * 
- * Need to create the card-body thing so that the card's info displays if the card is blank
- * 
- * Need to create a carousel - not super viable
- * 
- * Need to do the media queries
- * 
- * Need to do the append to a list
- * 
- * Need to allow to download to user storage
- */
-
 
 async function accessDatabase(name) {
   //const datatypes should be all-caps
@@ -62,8 +46,6 @@ const searchButton = document.querySelector(`#searchButton`);
 
 
 searchButton.addEventListener('click', () => {
-
-  // removeCards(cardGallery);
   cardGallery.innerHTML = '';
 
   const searchInput = document.querySelector(`#searchBar`);
@@ -133,60 +115,33 @@ function clickedCard(name) {
 const arrayOfCreatures = [];
 function arrayForFile(name) {
   arrayOfCreatures.push(name)
-  // for (let i = 0; i < arrayOfCreatures.length; i++){
-  //   console.log(arrayOfCreatures[i]);
-  // }
 
   console.log(arrayOfCreatures);
   verify(arrayOfCreatures)
-  // writeToFile(arrayOfCreatures);
 }
-
-//https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
-// var fs = require('fs');
 
 function verify(arrayOfCreatures) {
   console.log(`verifying that array of creatures is returning well: ${arrayOfCreatures}`)
 }
 
-const downloadButton = document.querySelector('#download-button');
+const displayButton = document.querySelector('#displayChoices');
 
-downloadButton.addEventListener('click', (arrayOfCreatures) => {
+const showDecklist = document.querySelector('#current-decklist');
+displayButton.addEventListener('click', () => {
 
-  console.log(`download ${arrayOfCreatures}`)
+  showDecklist.innerHTML = '';
+
+  for (let i = 0; i < arrayOfCreatures.length; i++){
+    const selectedCards =
+    `
+    <div class='selectedCards'>${arrayOfCreatures[i]}</div>
+    `
+    showDecklist.style.display = 'block';
+    showDecklist.insertAdjacentHTML(`afterend`, selectedCards)
+  }
   
 })
 
 
-  // var file = fs.createWriteStream('decklist.txt');
-  // file.on('error', function(err){})
 
 
-// }
-
-  
-
-  
-// function toggleModal() {
-//   const modalContainer = document.getElementById('modal-container');
-//   const modalContent = document.querySelector('#modal-content');
-//   switch (modalContainer.style.display) {
-//     case "":
-//     case "none":
-//       modalContainer.style.display = "initial";
-//       modalContent.style.display = "initial";
-//       break;
-//     case "initial":
-//       modalContainer.style.display = 'none';
-//       modalContent.style.display = 'none';
-//       break;
-//   }
-//   console.log(modalContainer.style.display);
-// }
-
-// const toggleButtons = document.getElementsByClassName('toggle-modal-button');
-// for (let button of toggleButtons) {
-//   button.addEventListener("click", () => {
-//     toggleModal();
-//   });
-// }
