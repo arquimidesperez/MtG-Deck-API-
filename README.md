@@ -232,3 +232,6 @@ function clickedCard(name) {
 ### Change Log
 
 - Changed picture boarder to work with different photo styles
+
+###  Deployed Link
+[MTG-Deck-API] (https://arquimidesperez.github.io/MtG-Deck-API-/)
