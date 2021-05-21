@@ -23,7 +23,7 @@ h1{
 
 #searching{
   text-align: center;
-  max-width: 800px;
+  max-width: 400px;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -97,18 +97,6 @@ h1{
   border-radius: 10px;
 }
 
-/* .selected-card-info{
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.2));
-  color: white;
-  font-size: 12px;
-  height: 270px;
-  padding: 5px 6px 2px 6px;
-  z-index: 2;
-  text-shadow: 2px 2px black;
-  border-radius: 10px;
-} */
-
-
 
 #outputfile{
   max-width: 400px;
@@ -116,12 +104,6 @@ h1{
   margin-top: 30px;
   text-align: center;
   background-color:#7d522a;
-}
-
-a{
-  font-family: 'Sorts Mill Goudy', sans-serif;
-  text-decoration: none;
-  color: white;
 }
 
 
@@ -168,11 +150,9 @@ a{
   font-size: 18px;
 }
 
-.selectedCards{
-  background: #d3dbdd;
-}
 
-#buttomBuffer{
-  margin-top: 100px;
-  margin-bottom: 100px;
+@media screen and (max-width: 400px){
+  h1{
+    font-size: 24px;
+  }
 }

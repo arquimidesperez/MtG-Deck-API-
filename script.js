@@ -1,4 +1,3 @@
-
 async function accessDatabase(name) {
   //const datatypes should be all-caps
   //test URL to return the card 'Lightning Bolt'
@@ -32,7 +31,6 @@ async function accessDatabase(name) {
         }
       })
 
-      // console.log(uniqueCards);
       showToUser(uniqueCards);
 
     })
@@ -80,12 +78,10 @@ function showToUser(returnedUniqueCards) {
         </div>
       </div>
       `
-      // console.log('within imageless')
       cardGallery.insertAdjacentHTML('afterbegin', imagelessOutput);
       
     } else {
       cardGallery.insertAdjacentHTML('afterbegin', output);
-      // console.log('within images')
     }
 
   }
@@ -117,14 +113,12 @@ async function newAPICALL(name) {
   .then(res => {
 
     const searchedCard = res.data.cards[0];
-    // console.log(searchedCard);
 
     userDecklist(searchedCard);
 
   })
   .catch(error => {
     console.error(error);
-    // console.log('this is within the error catch')
   })
 
 }
@@ -133,13 +127,6 @@ const currentDecklist = document.querySelector('#selectedCardGallery');
 function userDecklist(returnedSearchedCard) {
 
   const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
-
-  // console.log(returnedSearchedCard)
-
-  // console.log(returnedSearchedCard.name);
-  // console.log(returnedSearchedCard.type);
-  // console.log(returnedSearchedCard.imageUrl);
-
 
   if (`${returnedSearchedCard.imageUrl}` == 'undefined') {
     const imagelessOutput =
@@ -153,17 +140,15 @@ function userDecklist(returnedSearchedCard) {
       </div>
     </div>
     `
-    // console.log('within imageless')
+
     currentDecklist.insertAdjacentHTML('afterbegin', imagelessOutput);
   } else {
     const output =
     `
     <div class='card' style="background-image: url('${returnedSearchedCard.imageUrl}')"></div>
     `
-  currentDecklist.insertAdjacentHTML('afterbegin', output);
-  // console.log('within images')
+  currentDecklist.insertAdjacentHTML('afterbegin', output);  
   }
-
 
 }
   
