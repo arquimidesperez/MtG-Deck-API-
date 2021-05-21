@@ -93,55 +93,77 @@ function showToUser(returnedUniqueCards) {
 
 function clickedCard(name) {
   const formBehavior = document.getElementById("form");
-  // const formC = document.getElementById('formContainer');
   formBehavior.style.display = "block"
-  // formC.style.display.height = '100vh';
   
   document.getElementById('cancel').onclick = function () {
-    // alert('Not appending to the list');
     formBehavior.style.display = 'none';
   }
 
   document.getElementById('confirm').onclick = function () {
-    // alert(`Adding ${name} to the deck list`);
-    arrayForFile(name);
-    //function to write to .txt list
+
     formBehavior.style.display = 'none';
+    console.log(name);
+    newAPICALL(name);
   }
 
 }
 
 
-const arrayOfCreatures = [];
-function arrayForFile(name) {
-  arrayOfCreatures.push(name)
-
-  console.log(arrayOfCreatures);
-  verify(arrayOfCreatures)
-}
-
-function verify(arrayOfCreatures) {
-  console.log(`verifying that array of creatures is returning well: ${arrayOfCreatures}`)
-}
-
-const displayButton = document.querySelector('#displayChoices');
-
-const showDecklist = document.querySelector('#current-decklist');
-displayButton.addEventListener('click', () => {
-
-  showDecklist.innerHTML = '';
-
-  for (let i = 0; i < arrayOfCreatures.length; i++){
-    const selectedCards =
-    `
-    <div class='selectedCards'>${arrayOfCreatures[i]}</div>
-    `
-    showDecklist.style.display = 'block';
-    showDecklist.insertAdjacentHTML(`afterend`, selectedCards)
-  }
+async function newAPICALL(name) {
   
-})
+  const nURL = `https://api.magicthegathering.io/v1/cards?name=${name}`
+
+  axios.get(nURL)
+  .then(res => {
+
+    const searchedCard = res.data.cards[0];
+    // console.log(searchedCard);
+
+    userDecklist(searchedCard);
+
+  })
+  .catch(error => {
+    console.error(error);
+    // console.log('this is within the error catch')
+  })
+
+}
+
+const currentDecklist = document.querySelector('#selectedCardGallery');
+function userDecklist(returnedSearchedCard) {
+
+  const image = 'https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/f/f8/Magic_card_back.jpg/revision/latest/scale-to-width-down/250?cb=20140813141013'
+
+  // console.log(returnedSearchedCard)
+
+  // console.log(returnedSearchedCard.name);
+  // console.log(returnedSearchedCard.type);
+  // console.log(returnedSearchedCard.imageUrl);
 
 
+  if (`${returnedSearchedCard.imageUrl}` == 'undefined') {
+    const imagelessOutput =
+    `
+    <div class='card' style="background-image: url('${image}')">
+      <div class='card-info'>
+        <p>Unfortunately this card's image cannot be displayed</p>
+          <p>${returnedSearchedCard.name}</p>
+          <p>${returnedSearchedCard.type}</p>
+          <p>${returnedSearchedCard.text}</p>
+      </div>
+    </div>
+    `
+    // console.log('within imageless')
+    currentDecklist.insertAdjacentHTML('afterbegin', imagelessOutput);
+  } else {
+    const output =
+    `
+    <div class='card' style="background-image: url('${returnedSearchedCard.imageUrl}')"></div>
+    `
+  currentDecklist.insertAdjacentHTML('afterbegin', output);
+  // console.log('within images')
+  }
 
 
+}
+  
