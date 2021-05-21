@@ -42,6 +42,9 @@ async function accessDatabase(name) {
 
 const searchButton = document.querySelector(`#searchButton`);
 
+/**
+ * Listener function to take the user's input from the search field
+ */
 
 searchButton.addEventListener('click', () => {
   cardGallery.innerHTML = '';
@@ -53,7 +56,12 @@ searchButton.addEventListener('click', () => {
 })
 
 
-
+/**
+ * showToUser function takes the returned array of uniqueCards from
+ * the async function. It then iterates through them and formats them to be displayed.
+ * Cards without an imageURl are assigned a generic MTG cardback as their .card div
+ * and provided with a .card-info div to display infromation
+ */
 const cardGallery = document.querySelector('#cardGallery');
 
 function showToUser(returnedUniqueCards) {
@@ -87,6 +95,9 @@ function showToUser(returnedUniqueCards) {
   }
 }
 
+/**
+ * Listens to the clicked card to pop up the form menu 
+ */
 function clickedCard(name) {
   const formBehavior = document.getElementById("form");
   formBehavior.style.display = "block"
@@ -104,7 +115,9 @@ function clickedCard(name) {
 
 }
 
-
+/**
+ * Makes the API call for the selected card
+ */
 async function newAPICALL(name) {
   
   const nURL = `https://api.magicthegathering.io/v1/cards?name=${name}`
@@ -122,6 +135,10 @@ async function newAPICALL(name) {
   })
 
 }
+
+/**
+ * Displays to the selectedCardGallery
+ */
 
 const currentDecklist = document.querySelector('#selectedCardGallery');
 function userDecklist(returnedSearchedCard) {

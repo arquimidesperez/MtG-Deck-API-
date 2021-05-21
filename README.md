@@ -195,22 +195,38 @@ The API to be used for this project is: https://docs.magicthegathering.io/
 
 | Component               | Priority | Estimated Time | Time Invested | Actual Time |
 | ----------------------- | :------: | :------------: | :-----------: | :---------: |
-| API Search              |    H     |    3 hours     |               |             |
-| API Search Unique only  |    H     |    3 hours     |               |             |
-| HTML Prototype          |    H     |    3 hours     |               |             |
-| Appending to HTML       |    H     |    2 hours     |               |             |
-| CSS Prototype           |    M     |    2 hours     |               |             |
-| CSS Flexbox             |    H     |    3 hours    |               |             |
-| Append Decklist         |    M     |   2.5 hours    |               |             |
-| Advanced CSS - Carousel |    H     |    3 hours     |               |             |
-| Local Storage           |    M     |   2.5 hours    |               |             |
-| Commander Search        |    L     |    3 hours     |               |             |
-| Total                   |          |   27 hours   |               |             |
+| API Search              |    H     |    3 hours     |   2.5hrs      |  2.5hrs     |
+| API Search Unique only  |    H     |    3 hours     |     2hrs       |   2hrs      |
+| HTML Prototype          |    H     |    3 hours     |      3.5hrs   | 3.5hrs      |
+| Appending to HTML       |    H     |    2 hours     |   3hrs       |     3hrs     |
+| CSS Prototype           |    M     |    2 hours     |   1.5hrs      |   1.5hrs     |
+| CSS Flexbox             |    H     |    3 hours    |    2hrs      |   2hrs        |
+| CSS Form               |    M     |    2 hours     |    4hrs      |   4hrs        |
+| Display Selected        |    H     |    1 hours    |    3hrs      |   3hrs        |
+| Append Decklist         |    M     |   2.5 hours    |    3hrs       |    3hrs      |
+| Local Storage           |    M     |   2.5 hours    |     n/a        |  n/a        |
+| Commander Search        |    L     |    3 hours     |     1 hrs     |   1hrs      |
+| Total                   |          |   27 hours   |     25.5hrs     |             |
 
 ### Code Snippet
 
 ```
+function clickedCard(name) {
+  const formBehavior = document.getElementById("form");
+  formBehavior.style.display = "block"
+  
+  document.getElementById('cancel').onclick = function () {
+    formBehavior.style.display = 'none';
+  }
 
+  document.getElementById('confirm').onclick = function () {
+
+    formBehavior.style.display = 'none';
+    console.log(name);
+    newAPICALL(name);
+  }
+
+}
 ```
 
 ### Change Log
