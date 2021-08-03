@@ -9,14 +9,14 @@ MTG-Deck-API: https://arquimidesperez.github.io/MtG-Deck-API-/
 - [MVP](#mvp)
 - [Goals](#goals)
 - [API](#api)
-- [API Snipped](#api-snippet)
+- [API Snippet](#api-snippet)
 - [Wireframes](#wireframes)
-<!-- - [Component Tree](#component-tree) -->
-<!-- - [ERD Model](#erd-model) -->
 - [Project Schedule](#project-schedule)
 - [Timeframes](#timeframes)
 - [Post-MVP](#post-mvp)
 - [Code Showcase](#code-showcase)
+<!-- - [Component Tree](#component-tree) -->
+<!-- - [ERD Model](#erd-model) -->
 
 ## MVP
 - Allow the user to search for a creature by name or by generic name descriptors such as 'Goblin', 'Wizard', or 'Knight' to name a few common generic titles appended to a creature's name.
@@ -25,10 +25,10 @@ MTG-Deck-API: https://arquimidesperez.github.io/MtG-Deck-API-/
 ## Goals
 Build out a single page application that utilizes Axios and the MtG card database api to enable users to query for cards via search-bar and display cards satisfying those parameters to the user. 
 
-### API
+## API
 The API to be used for this project is: https://docs.magicthegathering.io/
 
-### API Snippet
+## API Snippet
 ```
 {
     "cards": [
